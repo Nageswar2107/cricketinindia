@@ -1,0 +1,215 @@
+body{
+	background-color:lavender;
+	margin: 3px;
+	padding: 3px;
+}
+.title{
+	background-color: green;
+	padding: 3px;
+	background-image: url(../image/indianflag.jpg);/* image from local folder*/
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.title img{
+	width: 250px;
+	height: 150px;
+}
+.title h1{
+	float: right;
+	padding-right: 5px;
+}
+.imgholder{
+	width: 20%;
+  	margin-left: 15px;
+  	float: left;
+  	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding:30px;
+	border-radius: 10px;
+}
+.imgholder img{
+	width: 250px;
+	height: 150px;
+	margin: 5px;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+nav{
+	border: 2px solid none;
+	margin: 4px;
+	padding: 1%;
+	border-radius: 10px;
+	padding-left: 5%;
+}
+.navi{
+	width: 100%;
+	background-color: #78cad3;
+}
+nav a{
+	border: 2px solid none;
+	margin: 5px;
+	margin-right: 5%;
+	padding: 1% 2% 1% 2%;
+	background-color: lightblue;
+	outline: none;
+	text-decoration: none;
+	border-radius: 15px;
+	opacity: 0.8;
+}
+a:hover,a:focus{
+	opacity: 1;
+	background-color: green;
+	border-radius: 30px;
+	color: white;
+}
+nav .active{
+	background-color:white;
+	color: black;
+
+}
+.body{
+	width: 65%;
+	float: right;
+	margin:2%;
+}
+.body iframe{
+	padding-left: 25%;
+	width: 350px;
+	height: 250px;
+}
+.sect{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.sect img{
+	width: 250px;
+	height: 150px;
+}
+.bot{
+	background-color: orange;
+	width: 100%;
+	text-align: center;
+}
+.body h1{
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.body table{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	border-collapse: collapse;
+  	width: 70%;
+  	margin-left: 10%;
+}
+.body table td,th{
+	border:1px solid black;
+}
+.body  table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+.body table th{
+	background-color: green;
+	color: white;
+}
+.container{
+	width: 60%%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.container div{
+	width: 20%;
+	background-color: orange;
+	margin:1%;
+	padding: 10px;
+	opacity: 0.7;
+}
+.container div img{
+	width: 100%;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 4px 3px black;
+
+}
+.container div:hover{
+	transition: all 1s ease;
+	opacity: 1;
+	cursor: pointer;
+	color: lightgray;
+
+}
+.container img:hover{
+	border-radius: 3px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+	body{
+		background-color: orange;
+	}
+
+	.title h1{
+		text-align: center;
+		padding-right: 5px;
+	}
+	.imgholder{
+		width: 100%;
+		flex-direction: column;
+
+	}
+	.body iframe{
+		padding-left: 25px;
+	}
+	.container div{
+		width: 100%;
+		flex-direction: column;
+	}
+	.navi{
+		width: 100%;
+		display: inline-block;
+		margin:1px;
+		border-radius: 10px;
+		margin-bottom: 3px;
+	}
+	.navi nav{
+		margin: none;
+		padding-left: 1px;
+		margin:1px;
+	}
+	.navi nav a{
+		margin:1px;
+	}
+	.title h1{
+		text-align: center;
+		color: blue;
+		padding-right: 20px;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	body{
+		background-color: lavender;
+	}
+	.title h1{
+		text-align: center;
+		padding-right: 5px;
+	}
+	.imgholder{
+		flex-direction: row;
+		width: 100%;
+	}
+	.container div{
+		width: 100%;
+		flex-direction: column;
+		padding-left: 5%;
+		margin-left: 10%;
+	}
+}
+
+
